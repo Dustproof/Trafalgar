@@ -822,6 +822,27 @@ button.text.dark:hover {
   color: $color-brand-primary-dark;
 }
 
+/* Imagery */
+
+.container-parallax {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-parallax {
+  background-image: url(../img/image_quoteLeaf.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+}
+
 
 /* Mobile */
 
