@@ -10,3 +10,16 @@ $(".toggle-password").click(function() {
     input.attr("type", "password");
   }
 });
+
+
+// Hero Parallax
+
+$(window).scroll(function() {
+  parallax();
+})
+
+function parallax() {
+  var wScroll = $(window).scrollTop();
+  $(".image-parallax").css("background-position",
+  "center "+(wScroll*.2)+"px")
+}

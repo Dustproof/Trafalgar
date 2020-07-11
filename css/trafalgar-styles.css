@@ -844,24 +844,11 @@ button.text.dark:hover {
 }
 
 /* Imagery */
-.container-parallax {
-  overflow: hidden;
-  position: relative;
-}
-
 .image-parallax {
   background-image: url(../img/image_quoteLeaf.svg);
-  background-size: cover;
+  background-size: 1200px auto;
   background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: -20%;
-  right: 0;
-  bottom: -20%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 1200px;
+  background-position: center top;
 }
 
 /* Mobile */
