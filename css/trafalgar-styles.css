@@ -2,13 +2,19 @@
 /* Colors Light */
 /* Colors Dark */
 /* Typography */
+/* Fonts */
+@font-face {
+  font-family: 'futura-next';
+  src: url("../fonts/Neufville Digital - FuturaNext-Bold.otf");
+}
+
 /* Layout */
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #121925;
-  padding-top: 64px;
+  padding-top: 104px;
 }
 
 div {
@@ -22,7 +28,7 @@ div {
 
 nav {
   position: fixed;
-  top: 0;
+  top: 40px;
   left: 0;
   right: 0;
   background: #fff;
@@ -42,6 +48,119 @@ nav {
   /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */
+}
+
+.pre-nav {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  position: relative;
+  min-height: 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 99;
+}
+
+.pre-nav .container {
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pre-nav .cs-link {
+  height: 39px;
+  width: 58px;
+  position: relative;
+  background-image: url("../img/logo_costsaver_watermark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.pre-nav .cs-link:hover {
+  height: 39px;
+  width: 58px;
+  position: relative;
+  background-image: url("../img/logo_costsaver_fullColor.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pre-nav a {
+  color: #545963;
+  font-weight: 600;
+}
+
+.pre-nav .menu {
+  float: right;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pre-nav .alert {
+  padding: 0 8px;
+  background-color: #121925;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.pre-nav .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.pre-nav a:hover {
+  color: #121925;
+}
+
+.border-right {
+  border-right: 1px solid #D4D7DB;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #D4D7DB;
+}
+
+.border-left {
+  border-left: 1px solid #D4D7DB;
 }
 
 nav .container {
@@ -67,8 +186,24 @@ nav .brand {
 }
 
 nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .menu-2 {
   float: right;
   display: block;
+}
+
+nav a {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #121925;
 }
 
 section {
@@ -144,7 +279,7 @@ section {
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
-  top: 84px;
+  top: 124px;
 }
 
 .align-content-left {
@@ -264,6 +399,11 @@ p {
 a {
   color: #DC0933;
   text-decoration: none;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 
 a:hover {
@@ -280,7 +420,7 @@ a:hover {
 }
 
 h1 {
-  font-family: "Merriweather", serif;
+  font-family: "futura-next", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
@@ -288,7 +428,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Merriweather", serif;
+  font-family: "futura-next", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
@@ -297,7 +437,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Merriweather", serif;
+  font-family: "futura-next", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -306,7 +446,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Merriweather", serif;
+  font-family: "futura-next", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -762,7 +902,7 @@ button.medium {
   font-size: 16px;
   line-height: 24px;
   padding: 8px 16px;
-  min-width: 120px;
+  min-width: 80px;
 }
 
 button.small {
@@ -771,6 +911,7 @@ button.small {
   font-weight: 400;
   padding: 4px 8px;
   min-width: auto;
+  min-width: 80px;
 }
 
 button:hover,
