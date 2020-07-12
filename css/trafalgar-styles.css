@@ -210,7 +210,7 @@ nav a {
   font-size: 12px;
   line-height: 16px;
   font-weight: 600;
-  background-color: #fff;
+  background-color: #F4F5F6;
 }
 
 .breadcrumbs .container {
@@ -266,6 +266,10 @@ section {
   margin: 0 auto;
   max-width: 1200px;
   position: relative;
+}
+
+.wrapper.small {
+  max-width: 960px;
 }
 
 .section-form {
@@ -347,69 +351,73 @@ section {
   padding: 0 20px;
 }
 
-/* Spacing Right */
-.spacing-right-none {
+/* margin Right */
+.margin-right-none {
   margin-right: 0 !important;
 }
 
-.spacing-right-xx-small {
+.margin-right-xx-small {
   margin-right: 4px;
 }
 
-.spacing-right-x-small {
+.margin-right-x-small {
   margin-right: 8px;
 }
 
-.spacing-right-small {
+.margin-right-small {
   margin-right: 16px;
 }
 
-.spacing-right-medium {
+.margin-right-medium {
   margin-right: 20px;
 }
 
-.spacing-right-large {
+.margin-right-large {
   margin-right: 32px;
 }
 
-.spacing-right-x-large {
+.margin-right-x-large {
   margin-right: 40px;
 }
 
-.spacing-right-xx-large {
+.margin-right-xx-large {
   margin-right: 80px;
 }
 
 /* Spacing Bottom */
-.spacing-bottom-none {
+.margin-bottom-none {
   margin-bottom: 0 !important;
 }
 
-.spacing-bottom-xx-small {
+.padding-bottom-none {
+  padding-bottom: 0;
+}
+
+.margin-bottom-xx-small {
   margin-bottom: 4px;
 }
 
-.spacing-bottom-x-small {
+.margin-bottom-x-small {
   margin-bottom: 8px;
 }
 
-.spacing-bottom-small {
+.margin-bottom-small {
   margin-bottom: 16px;
 }
 
-.spacing-bottom-medium {
+.margin-bottom-medium {
   margin-bottom: 20px;
 }
 
-.spacing-bottom-large {
+.margin-bottom-large {
   margin-bottom: 32px;
 }
 
-.spacing-bottom-x-large {
+.margin-bottom-x-large {
   margin-bottom: 40px;
 }
 
-.spacing-bottom-xx-large {
+.margin-bottom-xx-large {
   margin-bottom: 80px;
 }
 
@@ -1020,11 +1028,24 @@ button.text.dark:hover {
   background-position: center top;
 }
 
-.image-explore-from-home {
+.image-book-a-video-appointment {
   background-image: url(../img/image_explore-from-home.svg);
   background-size: 1200px auto;
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+.image-explore-from-home {
+  background-image: url(../img/gettyimages-507143796-2048x2048.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.image-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 /* Lists */
