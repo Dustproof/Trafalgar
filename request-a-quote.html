@@ -48,15 +48,26 @@
           <a href="#">Get Inspired</a>
         </div>
         <div class="menu-2 align-content-left">
-          <p class="text-disclaimer-xx-small spacing-bottom-none">Call today</p>
-          <p class="spacing-bottom-none"><b>0800 533 5619</b></p>
+          <div style="display: flex; flex-direction: row; align-items: center;">
+            <a href="/request-a-quote.html"><button class="secondary small spacing-right-large">Request a Quote</button></a>
+            <div>
+              <p class="text-disclaimer-xx-small spacing-bottom-none">Call today</p>
+              <p class="spacing-bottom-none"><b>0800 533 5619</b></p>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
 
-    <div style="background: #F4F5F6; position: fixed; z-index: -1; width: 58%; height: 100%; right: 0;">
+    <div class="breadcrumbs section-xx-small border-bottom">
+      <div class="wrapper container">
+        <p class="spacing-bottom-none"><a href="#"><i class="fas fa-home spacing-right-x-small"></i></a><i class="fas fa-angle-right spacing-right-x-small"></i><a href="/request-a-quote.html" class="active">Request a Quote</a></p>
+      </div>
+    </div>
+
+    <div style="background: #F4F5F6; position: fixed; z-index: -1; width: 58%; height: 100vh; right: 0; top: 0;">
         </div>
-    <section class="section-dark section-small align-content-center image-parallax">
+    <section class="section-dark section-small align-content-center image-parallax image-quote">
       <div class="wrapper">
         <h2>Request a Quote</h2>
         <p class="align-object-center">We believe you'll get the best advice by talking to someone who has been there when planning your next vacation.</p>
@@ -97,7 +108,7 @@
                <label for="email-address" class="required">Email address</label>
                <input type="email" id="email-address" required>
                <label for="contact-number" class="required">Contact number</label>
-               <input type="number" id="contact-number" class="spacing-bottom-none" required>
+               <input type="tel" id="contact-number" class="spacing-bottom-none" required>
              </div>
   
             <div class="section-form">
@@ -119,7 +130,7 @@
              <div class="section-form">
                <div class="spacing-bottom-medium">
                  <input type="checkbox" id="keep-updated">
-                 <label for="keep-updated">I would like to receive emails with travel inspiration, offers & exclusive event invites from Trafalgar.</label>
+                 <label for="keep-updated" class="spacing-bottom-none">I would like to receive emails with travel inspiration, offers & exclusive event invites from Trafalgar.</label>
                </div>
                <div class="align-content-center">
                  <input type="submit" value="Send Enquiry">
@@ -137,16 +148,28 @@
         <div class="col-5 align-left text-small" style="background: #F4F5F6; padding: 40px; box-sizing: border-box;">
           <div class="sticky">
 
+            <div class="container-card" style="display: flex; flex-direction: column;">
+              <div style="background-image: url(img/gettyimages-507143796-2048x2048.jpg); background-size: cover; background-position-y: -48px;; background-repeat: no-repeat; padding-top: 56.25%; margin: -20px; margin-bottom: 32px; border-radius: 8px 8px 0 0;";>
+              </div>
+              <div>
+                <h4>Book a Video Appointment</h4>
+                <p>Start the vacation conversation, virtually with one of our experienced Personal Travel Experts.</p>
+                <a href="/book-a-video-appointment.html">Book a Video Appointment</a>
+              </div>
+            </div>
+
+            <!--
             <div class="container-card" style="display: flex;">
               <div class="spacing-right-large" style="background-image: url(img/undraw_traveling_t8y2.svg); background-size: contain; background-repeat: no-repeat; width: 100%; max-width: 96px;">
               </div>
               <div>
-                <h4>Sign In to My Trafalgar</h4>
-                <p>This will help us quickly identify you and get you the right kind of help.</p>
-                <button class="small spacing-right-x-small">Sign In</button>
-                <button class="small secondary">Register</button>
+                <h4>Book a Video Appointment</h4>
+                <p>Start the vacation conversation, virtually with one of our experienced Personal Travel Experts.</p>
+                <a href="/book-a-video-appointment.html">Book a Video Appointment</a>
               </div>
             </div>
+
+          -->
 
             <div class="container-card" style="display: flex">
               <div class="spacing-right-large" style="background-image: url(img/undraw_reading_0re1.svg); background-size: contain; background-repeat: no-repeat; width: 100%; max-width: 96px;">

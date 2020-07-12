@@ -21,5 +21,5 @@ $(window).scroll(function() {
 function parallax() {
   var wScroll = $(window).scrollTop();
   $(".image-parallax").css("background-position",
-  "center "+(wScroll*.2)+"px")
+  `center ${wScroll * .2}px`)
 }
