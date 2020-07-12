@@ -18,6 +18,7 @@ $(window).scroll(function() {
   parallax();
 })
 
+
 function parallax() {
   var wScroll = $(window).scrollTop();
   $(".image-parallax").css("background-position",

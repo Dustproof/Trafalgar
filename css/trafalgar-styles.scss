@@ -997,16 +997,22 @@ button.text.dark:hover {
 }
 
 .image-explore-from-home {
-  background-image: url(../img/gettyimages-507143796-2048x2048.jpg);
+  background-image: url(../img/gettyimages-509640330-2048x2048.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 0;
+  position: relative;
 }
 
 .image-overlay {
   background-color: rgba(0, 0, 0, .4);
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
