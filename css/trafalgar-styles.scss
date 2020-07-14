@@ -47,9 +47,8 @@ nav {
   right: 0;
   background: #fff;
   box-shadow: 0 2px 4px rgba(#29364C, .2);
-  padding: 8px 20px;
+  padding: 0 20px;
   z-index: 99;
-  min-height: 64px;
   display: flex;
   align-items: center;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -184,6 +183,17 @@ nav a {
   line-height: 20px;
   font-weight: 600;;
   color: $color-brand-secondary;
+}
+
+.nav-link {
+  padding: 20px 12px;
+  border-top: 2px solid #transparent;
+  border-bottom: 2px solid rgba($color-brand-secondary, 0);
+  transition: all 200ms;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid $color-brand-secondary;
 }
 
 .breadcrumbs {

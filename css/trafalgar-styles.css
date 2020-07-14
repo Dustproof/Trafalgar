@@ -35,9 +35,8 @@ nav {
   background: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(41, 54, 76, 0.2);
           box-shadow: 0 2px 4px rgba(41, 54, 76, 0.2);
-  padding: 8px 20px;
+  padding: 0 20px;
   z-index: 99;
-  min-height: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,6 +204,18 @@ nav a {
   line-height: 20px;
   font-weight: 600;
   color: #121925;
+}
+
+.nav-link {
+  padding: 20px 12px;
+  border-top: 2px solid #transparent;
+  border-bottom: 2px solid rgba(18, 25, 37, 0);
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #121925;
 }
 
 .breadcrumbs {
