@@ -30,7 +30,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #121925;
-  padding-top: 104px;
+  padding-top: 40px;
 }
 
 div {
@@ -41,8 +41,8 @@ div {
 }
 
 nav {
-  position: fixed;
-  top: 40px;
+  position: sticky;
+  top: 0;
   left: 0;
   right: 0;
   background: #fff;
@@ -66,7 +66,7 @@ nav {
   -webkit-box-align: center;
   position: relative;
   min-height: 32px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -280,7 +280,7 @@ section {
 .sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 124px;
+  top: 84px;
 }
 
 .align-content-left {
@@ -538,12 +538,13 @@ textarea {
 }
 
 textarea {
-  min-height: 88px;
+  min-height: 92px;
 }
 
 /* Text Field */
 
 [type=text],
+[type=search],
 [type=password],
 [type=url],
 [type=email],
@@ -555,7 +556,7 @@ textarea {
   box-sizing: border-box;         /* Opera/IE 8+ */
   display: block;
   background: #E9EBEE;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
   max-width: 440px;
   border: 1px solid rgba($color-brand-primary-light, 0);
@@ -564,8 +565,26 @@ textarea {
   transition: all 200ms;
 }
 
+nav [type=search] {
+  padding: 8px 16px 8px 40px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 40px;
+  position: relative;
+}
+
+nav .icon-search {
+  position: absolute;
+  z-index: 10;
+  height: 36px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .password {
-  padding-right: 40px;
+  padding-right: 42px;
 }
 
 .forgot-password {
@@ -576,6 +595,7 @@ textarea {
 }
 
 [type=text]:focus,
+[type=search]:focus,
 [type=password]:focus,
 [type=url]:focus,
 [type=email]:focus,
@@ -587,6 +607,7 @@ textarea:focus {
 }
 
 .section-dark [type=text],
+.section-dark [type=search],
 .section-dark [type=password],
 .section-dark [type=url],
 .section-dark [type=email],
@@ -598,6 +619,7 @@ textarea:focus {
 }
 
 .section-dark [type=text]:focus,
+.section-dark [type=search]:focus,
 .section-dark [type=password]:focus,
 .section-dark [type=url]:focus,
 .section-dark [type=email]:focus,
@@ -622,8 +644,8 @@ textarea:focus {
   right: 0;
   position: absolute;
   z-index: 2;
-  width: 40px !important;
-  height: 40px !important;
+  width: 42px !important;
+  height: 42px !important;
   cursor: pointer;
 }
 
@@ -646,7 +668,7 @@ select {
   border-radius: 4px;
   width: 100%;
   max-width: 440px;
-  padding: 8px 40px 8px 16px;
+  padding: 12px 40px 12px 12px;
   border: 1px solid rgba($color-brand-primary-light, 0);
   transition: all 200ms;
   margin-bottom: 16px;
@@ -661,14 +683,17 @@ select {
   display: block;
   content: "\f078";
   text-align: center;
-  line-height: 34px;
+  line-height: 20px;
   font-size: 12px;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   color: inherit;
   right: 0;
-  top: 0px;
+  top: 2px;
   pointer-events: none;
 }
 
