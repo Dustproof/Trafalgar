@@ -1179,18 +1179,23 @@ li {
 }
 
 /* Grids */
-.grid-container {
-  margin: 0 auto;
+.grid-2-col {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33.333% 33.333% 33.333%;
-      grid-template-columns: 33.333% 33.333% 33.333%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-item {
+.grid-3-col {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cell-large {
   padding: 0 40px;
 }
 

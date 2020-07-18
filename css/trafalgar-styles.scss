@@ -1125,14 +1125,19 @@ li {
 
 /* Grids */
 
-.grid-container {
-  margin: 0 auto;
+.grid-2-col {
   display: grid;
-  grid-template-columns: 33.333% 33.333% 33.333%;
-  justify-content: center;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-item {
+.grid-3-col {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cell-large {
   padding: 0 40px;
 }
 
