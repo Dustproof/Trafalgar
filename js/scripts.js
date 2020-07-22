@@ -25,3 +25,32 @@ function parallax() {
   $(".image-parallax").css("background-position",
   `center ${wScroll * .1}px`)
 }
+
+
+// Nav Search
+
+function searchNavGrow(el, wid) {
+  var element = document.getElementById(el);
+  element.style.transition = "all 200ms ease-out";
+  element.style.width = wid
+  element.style.marginLeft = "0";
+}
+
+function searchNavShrink(el, wid) {
+  var element = document.getElementById(el);
+  element.style.transition = "all 200ms ease-in 200ms";
+  element.style.width = wid
+  element.style.marginLeft = "40px";
+}
+
+function searchNavDropdownShow(el) {
+  var element = document.getElementById(el);
+  element.style.transition = "all 200ms ease-out 200ms";
+  element.style.height = "288px";
+}
+
+function searchNavDropdownHide(el) {
+  var element = document.getElementById(el);
+  element.style.transition = "all 200ms ease-in";
+  element.style.height = "0";
+}

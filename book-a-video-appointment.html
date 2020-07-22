@@ -52,11 +52,94 @@
           <a href="#" class="nav-link">Get Inspired</a>
         </div>
 
-        <div class="margin-right-x-large" style="flex-grow: 1;">
-          <i class="fas fa-search icon-search"></i><input type="search" class="search margin-bottom-none" placeholder="Where to?">
+        <div style="flex-grow: 1;">
+          <i class="fas fa-search icon-search"></i><input type="search" class="search search-nav margin-bottom-none" placeholder="Where to?" onfocus="searchNavGrow('nav-contact-number', '0'); searchNavDropdownShow('search-nav-dropdown');" onblur="searchNavShrink('nav-contact-number', '112px'); searchNavDropdownHide('search-nav-dropdown');">
+          
+          <div class="search-nav-dropdown" id="search-nav-dropdown">
+
+            <a href="#" class="link">
+              <div style="display: flex;">
+                <div class="search-link-region margin-right-x-small">
+                </div>
+                <p class="margin-bottom-none margin-right-small">
+                  <b class="text-small margin-bottom-none">Europe & Britain</b>
+                  <br>
+                  <span class="text-disclaimer-xx-small">XX trips available</span>
+                </p>
+              </div>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            
+            <a href="#" class="link">
+              <div style="display: flex;">
+                <div class="search-link-region margin-right-x-small" style="background: #A8D3DA;">
+                </div>
+                <p class="margin-bottom-none margin-right-small">
+                  <b class="text-small margin-bottom-none">Latin America</b>
+                  <br>
+                  <span class="text-disclaimer-xx-small">XX trips available</span>
+                </p>
+              </div>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link">
+              <div style="display: flex;">
+                <div class="search-link-region margin-right-x-small" style="background: #DCEDC1;">
+                </div>
+                <p class="margin-bottom-none margin-right-small">
+                  <b class="text-small margin-bottom-none">USA & Canada</b>
+                  <br>
+                  <span class="text-disclaimer-xx-small">XX trips available</span>
+                </p>
+              </div>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link">
+              <div style="display: flex;">
+                <div class="search-link-region margin-right-x-small" style="background: #FDD998;">
+                </div>
+                <p class="margin-bottom-none margin-right-small">
+                  <b class="text-small margin-bottom-none">Africa &<br>Middle East</b>
+                  <br>
+                  <span class="text-disclaimer-xx-small">XX trips available</span>
+                </p>
+              </div>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link">
+              <div style="display: flex;">
+                <div class="search-link-region margin-right-x-small" style="background: #FFB6B6;">
+                </div>
+                <p class="margin-bottom-none margin-right-small">
+                  <b class="text-small margin-bottom-none">Asia</b>
+                  <br>
+                  <span class="text-disclaimer-xx-small">XX trips available</span>
+                </p>
+              </div>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <a href="#" class="link">
+              <div style="display: flex;">
+                <div class="search-link-region margin-right-x-small" style="background: #A6B1E1;">
+                </div>
+                <p class="margin-bottom-none margin-right-small">
+                  <b class="text-small margin-bottom-none">Australia &<br>New Zeland</b>
+                  <br>
+                  <span class="text-disclaimer-xx-small">XX trips available</span>
+                </p>
+              </div>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+
+          </div>
+
         </div>
         
-        <div class="menu-2 align-content-left">
+        <div class="menu-2 align-content-left margin-left-large" style="transform-origin: right; overflow: hidden; white-space: nowrap; width: 112px;" id="nav-contact-number">
               <p class="text-disclaimer-xx-small margin-bottom-none">Call today</p>
               <p class="margin-bottom-none"><b>0800 533 5619</b></p>
             </div>
@@ -70,12 +153,12 @@
     <div class="breadcrumbs section-xx-small">
       <div class="wrapper container">
         <p class="margin-bottom-none">
-          <a href="#"><i class="fas fa-home margin-right-x-small"></i></a>
-          <i class="fas fa-angle-right margin-right-x-small"></i>
-          <a href="#" class="margin-right-x-small">Contact</a>
-          <i class="fas fa-angle-right margin-right-x-small"></i>
-          <a href="explore-from-home.html" class="margin-right-x-small">Explore From Home</a>
-          <i class="fas fa-angle-right margin-right-x-small"></i>
+          <a href="#"><i class="fas fa-home margin-right-xx-small"></i></a>
+          <i class="fas fa-angle-right margin-right-xx-small"></i>
+          <a href="#" class="margin-right-xx-small">Contact</a>
+          <i class="fas fa-angle-right margin-right-xx-small"></i>
+          <a href="explore-from-home.html" class="margin-right-xx-small">Explore From Home</a>
+          <i class="fas fa-angle-right margin-right-xx-small"></i>
           <a href="/book-a-video-appointment.html" class="active">Book a Video Appointment</a>
         </p>
       </div>
